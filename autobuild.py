@@ -3,7 +3,7 @@ import mcpi.block as block
 from time import sleep
 '''
     This function will create a cube at the specified (x,y,z) coordinate
-    the inner dimensions are defined by 2*distX and 2*distZ with an inner height of distY 
+    the inner dimensions are defined by 2*distX and 2*distZ with an inner height of distY
 '''
 def cube(game, distX, distY, distZ, x, y, z, material):
     #floor
@@ -83,11 +83,11 @@ def bed(game,x,y,z,orientation):
                 x-1,y,z,
                 block.BED.id,3)
 '''
-    akil spawns a model house Akil created using some of the functions above at the specified (x,y,z) coordinate
+    sample_house spawns a model house created using some of the functions above at the specified (x,y,z) coordinate
 '''
-def akil(game,x,y,z):
+def sameple_house(game,x,y,z):
     delay = 1
-    game.postToChat("Hello, world. Spawning Akil's house in")
+    game.postToChat("Spawing in the sample_house")
     game.postToChat("3")
     sleep(delay)
     game.postToChat("2")
