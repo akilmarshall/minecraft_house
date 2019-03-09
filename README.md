@@ -5,12 +5,9 @@ The goal of this repository is to add some additional functions to make placing 
 
 ## Example Code
 
-### Sameple House
-
+### Single Block
 ```python
-sample_house(game, x, y ,z)
 ```
-Places a sample_house in the specified game instance at an (x,y,z) coordinate triple.
 
 ### Hollow Cube
 
@@ -118,5 +115,12 @@ Where TYPE can be any one of the following: **fnorth**, **fsouth**, **fwest**, *
 mc.setBlocks(me.x, me.y, me.z, block.NEATHER_REACTOR_CORE.id, TYPE)
 ```
 Where TYPE can be any one of the following: **unused**, **active**, **inactive**.
+
+### Sample House
+
+```python
+sample_house(game, x, y ,z)
+```
+Places a sample_house in the specified game instance at an (x,y,z) coordinate triple.
 
 Happy coding! :octocat:
