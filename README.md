@@ -118,3 +118,5 @@ Where TYPE can be any one of the following: **fnorth**, **fsouth**, **fwest**, *
 mc.setBlocks(me.x, me.y, me.z, block.NEATHER_REACTOR_CORE.id, TYPE)
 ```
 Where TYPE can be any one of the following: **unused**, **active**, **inactive**.
+
+Happy coding! :octocat:
