@@ -2,7 +2,7 @@ import mcpi.minecraft as minecraft
 import mcpi.block as block
 from time import sleep
 
-#Color Constants
+#WOOL Constants
 white           = 0
 orange          = 1
 magenta         = 2

@@ -7,7 +7,16 @@ The goal of this repository is to add some additional functions to make placing 
 
 ### Single Block
 ```python
+mc.setBlock(me.x+1, me.y, me.z, NAME)
 ```
+Where NAME is  the name of a block in block_ids.txt(block_ids.txt)
+
+
+### Solid Rectangular Prism
+```python
+mc.setBlocks(me.x+1, me.y, me.z, me.x+11, me.y+10, me.z, NAME)
+```
+Spans a retangular prism of the type NAME from a list of the block ids in block_ids.txt(block_ids.txt) between the first and second (x,y,z) coordinate triple.
 
 ### Hollow Cube
 
