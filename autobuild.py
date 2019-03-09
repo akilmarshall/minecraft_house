@@ -1,6 +1,79 @@
 import mcpi.minecraft as minecraft
 import mcpi.block as block
 from time import sleep
+
+#Color Constants
+white       = 0
+orange      = 1
+magenta     = 2
+light_blue  = 3
+yellow      = 4
+lime        = 5
+pink        = 6
+grey        = 7
+light_grey  = 8
+cyan        = 9
+purple      = 10
+blue        = 11
+brown       = 12
+green       = 13
+red         = 14
+black       = 15
+#WOOD Constants
+oak         = 0
+spruce      = 1
+birch       = 2
+#SAPLING Constants
+oak         = 0
+spruce      = 1
+birch       = 2
+#GRASS Constants
+shurb       = 0
+grass       = 1
+fern        = 2
+#STONE_BRICK Constants
+stone       = 0
+mossy       = 1
+cracked     = 2
+chiseled    = 3
+#STONE_SLAB constants
+stone       = 0
+sandstone   = 1
+wooden      = 2
+cobblestone = 3
+brick       = 4
+stone_brick = 5
+#TNT Constants
+inactive    = 0
+active      = 1
+#LEAVES Constants
+oak         = 0
+spruce      = 1
+birch       = 2
+#SANDSTONE Constants
+chiseled    = 1
+smooth      = 2
+#STAIRS_[COBBLESTONE,WOOD] Constants
+east        = 0
+west        = 1
+south       = 2
+north       = 3
+##u stands for upside down
+ueast       = 4
+uwest       = 5
+usouth      = 6
+unorth      = 7
+#CHEST,FURNACE_ACTIVE,FURNACE_INACTIVE Constants
+fnorth      = 2
+fsouth      = 3
+fwest       = 4
+feast       = 5
+#NETHER_REACTOR_CORE Constants
+unused      = 0
+active      = 1
+stopped     = 2
+
+
 '''
     This function will create a cube at the specified (x,y,z) coordinate
     the inner dimensions are defined by 2*distX and 2*distZ with an inner height of distY
@@ -85,7 +158,7 @@ def bed(game,x,y,z,orientation):
 '''
     sample_house spawns a model house created using some of the functions above at the specified (x,y,z) coordinate
 '''
-def sameple_house(game,x,y,z):
+def sample_house(game,x,y,z):
     delay = 1
     game.postToChat("Spawing in the sample_house")
     game.postToChat("3")
