@@ -7,7 +7,7 @@ The goal of this repository is to add some additional functions to make placing 
 
 ### (X, Y, Z) ?
 
-Minecraft uses an (x,y,z) coordinate system, x determines east/west positioning, y determines height (unsusually, this is normally the z axis), and z determine north/south positioning.
+Minecraft uses an (x,y,z) coordinate system, x determines east/west positioning, y determines height (unsusually this is the z axis), and z determine north/south positioning.
 
 We can access the position our character is at with the following:
 ```python
