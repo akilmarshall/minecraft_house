@@ -25,14 +25,14 @@ To offset the (x,y,z) coordinate we are describing.
 
 ### Single Block
 ```python
-mc.setBlock(me.x+1, me.y, me.z, NAME)
+mc.setBlock(x, y, z, NAME)
 ```
 Where NAME is  the name of a block in [block_ids.txt](block_ids.txt)
 
 
 ### Solid Rectangular Prism
 ```python
-mc.setBlocks(me.x+1, me.y, me.z, me.x+11, me.y+10, me.z, NAME)
+mc.setBlocks(x, me, z, x+10, y+10, me.z, NAME)
 ```
 Spans a retangular prism of the type NAME from a list of the block ids in [block_ids.txt](block_ids.txt) between the first and second (x,y,z) coordinate triple.
 
