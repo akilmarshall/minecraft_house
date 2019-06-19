@@ -13,7 +13,7 @@ The goal of this repository is to add some additional functions to make placing 
 Minecraft uses an (x,y,z) coordinate system, x determines east/west positioning, y determines height (unusually), and z determine north/south positioning.
 
 
-![picture](img/coordinates.png)
+![image from gamepedia](img/coordinates.png)
 
 
 We can access the position of our character with the following:
@@ -22,6 +22,7 @@ me.x
 me.y
 me.z
 ```
+![in game](img/cpic.png)
 We will use these for just about everything. We can do things like
 ```python
 me.x+5
