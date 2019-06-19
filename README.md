@@ -13,7 +13,7 @@ The goal of this repository is to add some additional functions to make placing 
 Minecraft uses an (x,y,z) coordinate system, x determines east/west positioning, y determines height (unusually), and z determine north/south positioning.
 
 
-![image from gamepedia](img/coordinates.png)
+![Image from gamepedia](img/coordinates.png)
 
 
 We can access the position of our character with the following:
@@ -22,30 +22,35 @@ me.x
 me.y
 me.z
 ```
-![in game](img/cpic.png)
+![Coordinates are viewable in game](img/cpic.png)
 
 
-We will use these for just about everything. We can do things like
+Our players coordinates are just variables and we can do math with and to them.
 ```python
 me.x+5
 me.y-3
 me.z+6
 ```
-To offset the (x,y,z) coordinate we are describing.
 
 ### Single Block
 ```python
-mc.setBlock(x, y, z, NAME)
+mc.setBlock(x, y, z, block_id)
 ```
-Where NAME is  the name of a block in [block_ids.txt](block_ids.txt)
+Where block_id is  the name of a block in [block_ids.txt](block_ids.txt)
+```python3
+# Example
+mc.setBlock(me.x, me.y, me.z, block.AIR.id)
+```
 
 
 ### Solid Rectangular Prism
 ```python
-mc.setBlocks(me.x, me.y, me.z, me.x+10, me.y+10, me.z, NAME)
+mc.setBlocks(me.x, me.y, me.z, me.x+10, me.y+10, me.z, block_id)
 ```
-Spans a retangular prism of the type NAME from a list of the block ids in [block_ids.txt](block_ids.txt) between the first and second (x,y,z) coordinate triple.
-
+Spans a retangular prism of the type block.id from a list of the block ids in [block_ids.txt](block_ids.txt) between the first and second (x,y,z) coordinate triples.
+```python
+mc.setBlocks(me.x, me.y, me.z, me.x+10, me.y+10, me.z, block.DIAMOND_BLOCK.id)
+```
 ### Hollow Cube
 
 ```python
@@ -138,7 +143,7 @@ mc.setBlock(x, y, z, block.STAIRS_COBBLESTONE.id, TYPE)
 ```
 Where TYPE can be any one of the following: **east**, **west**, **south**, **north**, **ueast**, **uwest**, **usouth**, **unorth**.
 
-Where the "u" directions are upside down.
+Where the "u" stands for upside down.
 
 ### Chests and Furnaces
 ```python
@@ -159,5 +164,21 @@ Where TYPE can be any one of the following: **unused**, **active**, **inactive**
 sample_house(mc, x, y ,z)
 ```
 Places a sample_house in the specified game instance at an (x,y,z) coordinate triple.
+
+### Other Useful Functions
+Print messages to the games chat
+```python
+mc.postToChat("Hello, world!")
+```
+
+Make a save point
+```python
+mc.saveCheckPoint()
+```
+
+Restore last save point
+```python
+mc.restoreCheckpoint()
+```
 
 Happy coding! :octocat:
