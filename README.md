@@ -1,15 +1,22 @@
-# A Small Extension to MCPI
-original documentation exists at https://www.stuffaboutcode.com/p/minecraft-api-reference.html
+# A Small Extension to [MCPI](https://github.com/martinohanlon/mcpi) for the Raspberry Pi
+[MCPI repository](https://github.com/martinohanlon/mcpi#minecraft-pi-edition-api-python-library)
 
-The goal of this repository is to add some additional functions to make placing blocks that are direction/color variable or things like doors.
+[Stuff about code]( https://www.stuffaboutcode.com/p/minecraft-api-reference.html ) is also a very good resource
 
-## Example Code
 
-### (X, Y, Z) ?
+The goal of this repository is to add some additional functions to make placing blocks that are either directional or color variable i.e. doors or wool.
 
-Minecraft uses an (x,y,z) coordinate system, x determines east/west positioning, y determines height (unsusually), and z determine north/south positioning.
+## Documentation with Example Code
 
-We can access the position our character is at with the following:
+### (X, Y, Z) Coordinate System
+
+Minecraft uses an (x,y,z) coordinate system, x determines east/west positioning, y determines height (unusually), and z determine north/south positioning.
+
+
+![picture](img/coordinates.png)
+
+
+We can access the position of our character with the following:
 ```python
 me.x
 me.y
