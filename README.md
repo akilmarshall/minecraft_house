@@ -23,6 +23,8 @@ me.y
 me.z
 ```
 ![in game](img/cpic.png)
+
+
 We will use these for just about everything. We can do things like
 ```python
 me.x+5
