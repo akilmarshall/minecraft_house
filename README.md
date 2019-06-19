@@ -173,7 +173,7 @@ mc.postToChat("Hello, world!")
 
 Make a save point
 ```python
-mc.saveCheckPoint()
+mc.saveCheckpoint()
 ```
 
 Restore last save point
