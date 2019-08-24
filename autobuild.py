@@ -297,7 +297,7 @@ class builder:
                  block.STONE_SLAB_DOUBLE.id: self._place_stone_slab,
                  block.TNT.id: self._place_tnt,
                  block.LEAVES.id: self._place_leaf,
-                 block.SANDSTONE.id: self.place_sandstone,
+                 block.SANDSTONE.id: self._place_sandstone,
                  block.STAIRS_WOOD.id: self._place_stair,
                  block.STAIRS_COBBLESTONE.id: self._place_stair,
                  block.LADDER.id: self._place_ladder,
