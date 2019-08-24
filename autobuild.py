@@ -311,7 +311,7 @@ class builder:
                  }
         if material in calls:
             calls[material](relative_x, relative_y, relative_z,
-                            material, self._validate(option))
+                            material, self._validate(material, option))
         else:
             self.game.setBlock(relative_x, relative_y, relative_z, material)
 
